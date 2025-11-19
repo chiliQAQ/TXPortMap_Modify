@@ -1,16 +1,16 @@
-Port Scanner & Banner Identify From ，对TXPortMap项目修改
+Port Scanner & Banner Identify From ，modified from the TXPortMap project.
 
 [https://github.com/4dogs-cn/TXPortMap](https://github.com/4dogs-cn/TXPortMap)
 
-1、增加直接对连续ip扫描的兼容方式
+1、Enhance compatibility for direct continuous IP scanning
 
-如下，会依次扫描172.16.110.10至172.16.110.14的所有ip地址
+As follows, all IP addresses from 172.16.110.10 to 172.16.110.14 will be scanned sequentially.
 
 ```bash
 ./TXPortMap -i 172.16.110.10-14 -t1000
 ```
 
-2、增加对域名的兼容性，防止部分port只运行域名访问的情况
+2、Enhance domain name compatibility to prevent scenarios where certain ports only accept domain name access.
 
 ```bash
 ./TXPortMap -i example.com -t1000
